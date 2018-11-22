@@ -10,4 +10,5 @@ sum = 0
 for val in numbers:
 	sum = sum+val
 
+print (sum)
 # Output: The sum is 48
