@@ -5,7 +5,7 @@ jobs:
       - image: g33tha/circleci
     steps:
       - checkout
-      - run: ./test.sh
+      - run: sudo ./test.sh
       - type: shell
         name: PR - Add comment on PR with URL details
         command: |
