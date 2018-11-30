@@ -4,12 +4,6 @@ jobs:
     docker:
       - image: circleci/python:3.6.1
     steps:
-      - checkout
-      - run:
-          name: install dependincies
-          command: sudo apt update && sudo apt-get install -y jq curl git
-      #- sudo apt-get install curl && sudo apt-get install git
-      #- python test.py
       - type: shell
         name: PR - Add comment on PR with URL details
         command: |
